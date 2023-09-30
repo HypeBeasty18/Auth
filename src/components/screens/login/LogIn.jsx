@@ -9,7 +9,7 @@ const LogIn = () => {
   const navigate = useNavigate();
 
   const [post, setPost] = useState({
-    email: '',
+    username: '',
     password: ''
    })
 
@@ -37,7 +37,7 @@ const LogIn = () => {
           </div>
           <form >
             <h3 className="mb-3 font-medium">Email Address</h3>
-            <input className={styles.inputs} name='email' placeholder='Email Address' type='text' onChange={handleInput}/>
+            <input className={styles.inputs} name='username' placeholder='Email Address' type='text' onChange={handleInput}/>
             <h3 className="mb-3 font-medium">Password</h3>
             <input className={styles.inputs} name='password' placeholder='Password' type='text' onChange={handleInput}/>
             <button className={styles.btn} onClick={handleSubmit} > Log in</button>
